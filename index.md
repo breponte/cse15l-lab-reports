@@ -33,3 +33,7 @@ You can also `inline code` with " ` ` "
 ```
 And even make code blocks of inline code
 ```
+
+# LAB PROGRESS
+![image](https://user-images.githubusercontent.com/88344031/149242930-aa2af50a-fa6a-4f55-a909-d0fef27da567.png)
+
