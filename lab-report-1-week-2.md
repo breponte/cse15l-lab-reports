@@ -28,7 +28,21 @@ Next, we will connect remotely in VSCode. With VSCode open, open a new terminal 
 ---
 ## Trying Some Commands ##
 
-blah
+Some useful commands that you can try include:
+
+`cd <directory>` change directory
+
+`ls <directory (blank implies current directory)>` list (files and directories)
+
+`pwd` print working directory
+
+`mkdir <new directory>` make directory
+
+`cp <file>` copy
+
+To log out:
+
+`Ctrl` or `Cmd` + `D` or run `exit`
 
 ---
 ## Moving Files with `scp` ##
