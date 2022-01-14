@@ -79,9 +79,17 @@ SSH keys form a relationship between your computer and the server using public a
 
 First, you want to create a public key and private key by running `ssh-keygen`. It will prompt you asking what the new passphrase will be and you are give the option to submit no passphrase. The private key will be in the file `id_rsa` and the public key in `id_rsa.pub` which are both stored on in the `.ssh` directory on the client computer.
 
-Next, you must copy the **public** key to the server, but you first need to create the directory to store the key on the server. Log in and run the command `mkdir .ssh` which *makes the directory named `.ssh`*. Log out then copy the key into the directory you just made by running `scp /YOUR DIRECTORY/.ssh/id_rsa.pub cs15lwi22##@ieng6.ucsd.edu:~/.ssh/authorized_keys`. You need to substitute your own key directory and your own ieng6 account in the command because you want to copy *your own* public key to *your own* account.
+Next, you must copy the **public** key to the server, but you first need to create the directory to store the key on the server. Log in and run the command `mkdir .ssh` which *makes the directory named `.ssh`*. Log out then copy the key into the directory you just made by running `scp /YOUR DIRECTORY/.ssh/id_rsa.pub cs15lwi22##@ieng6.ucsd.edu:~/.ssh/authorized_keys`. You need to substitute your own key directory and your own ieng6 account in the command because you want to copy *your own* public key to *your own* account. You can now login without typing in your password (or with the password you set for the keys):
+
+![Image](LoggingInWithKey.png)
 
 ---
 ## Optimizing Remote Running ##
 
-blah
+In order to run a command quickly on the ieng6 computer and exit after (looks like you are running the server command from the client) you run `ssh cs15lwi22##@ieng6.ucsd.edu "<command>"` with your ieng6 account.
+
+Additionally, you can run multiple commands by separating individual commands with a semicolon (;), but make sure that if you want to run several commands on the server you include the quotes ("") as they determine what will be ran on the server.
+
+Other quality-of-life details: up-arrow or down-arrow to scroll through your history of commands and `tab` to autofill a command.
+
+![Image](MultipleCommands.png)
