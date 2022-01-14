@@ -75,7 +75,11 @@ Then run `scp WhereAmI.java cs15lwi22##@ieng6.ucsd.edu:~/` with your own ieng ac
 ---
 ## Setting an SSH Key ##
 
-blah
+SSH keys form a relationship between your computer and the server using public and private keys. The private key (yours) will substitute as a password when matched with the server's public key.
+
+First, you want to create a public key and private key by running `ssh-keygen`. It will prompt you asking what the new passphrase will be and you are give the option to submit no passphrase. The private key will be in the file `id_rsa` and the public key in `id_rsa.pub` which are both stored on in the `.ssh` directory on the client computer.
+
+Next, you must copy the **public** key to the server, but you first need to create the directory to store the key on the server. Log in and run the command `mkdir .ssh` which *makes the directory named `.ssh`*. Log out then copy the key into the directory you just made by running `scp /YOUR DIRECTORY/.ssh/id_rsa.pub cs15lwi22##@ieng6.ucsd.edu:~/.ssh/authorized_keys`. You need to substitute your own key directory and your own ieng6 account in the command because you want to copy *your own* public key to *your own* account.
 
 ---
 ## Optimizing Remote Running ##
