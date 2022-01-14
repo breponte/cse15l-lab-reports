@@ -2,7 +2,8 @@
 
 ## Installing VScode ##
 
-blah
+Go to the VScode website [here](https://code.visualstudio.com/) and follow the instructions. There is a dropdown to show the different possible versions (macOS, Windows, Linux). Download the *Stable* build.
+[Image]()
 
 ---
 ## Trying Some Commands ##
