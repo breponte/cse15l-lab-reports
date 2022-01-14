@@ -40,6 +40,8 @@ Some useful commands that you can try include:
 
 `cp <file>` copy
 
+![Image](TryingSomeCommands.png)
+
 To log out:
 
 `Ctrl` or `Cmd` + `D` or run `exit`
