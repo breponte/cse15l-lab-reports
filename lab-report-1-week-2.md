@@ -49,26 +49,13 @@ To log out:
 ---
 ## Moving Files with `scp` ##
 
-`scp` (secure copy) allows us to copy a file(s) from a client (your computer) to a server (ieng6 computer).
-
-For example, you can make a simple file that prints the file's details and location to the terminal. Name this file `WhereAmI.java`:
-```
-class WhereAmI {
-  public static void main(String[] args) {
-    System.out.println(System.getProperty("os.name"));
-    System.out.println(System.getProperty("user.name"));
-    System.out.println(System.getProperty("user.home"));
-    System.out.println(System.getProperty("user.dir"));
-  }
-}
-```
->Cited from [CSE15L Lab 1](https://ucsd-cse15l-w22.github.io/week/week1/#part-5-moving-files-over-ssh-with-scp)
+`scp` (secure copy) allows us to copy a file(s) from a client (your computer) to a server (ieng6 computer). You can create any file, but I will use a file named `WhereAmI.java` from CSE15L Lab 1.
 
 Compile and run the code. It may look something like this:
 
 ![Image](RunningWhereAmI.png)
 
-Then run `scp WhereAmI.java cs15lwi22##@ieng6.ucsd.edu:~/` with your own ieng account instead of **##** and type in your password when prompted. Log in to the ieng6 computer and run `ls` and you should see `WhereAmI.java` in the ieng6 computer. You can compile and run it to see where in the ieng6 computer it is stored in.
+Then run `scp <YOUR FILE> cs15lwi22##@ieng6.ucsd.edu:~/` with your own file, your own ieng6 account instead and type in your password when prompted. Log in to the ieng6 computer and run `ls` and you should see your file in the ieng6 computer. You can compile and run it and see your program run.
 
 ![Image](CopyingWhereAmI.png)
 
