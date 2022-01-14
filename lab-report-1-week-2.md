@@ -1,1 +1,25 @@
-![image](https://user-images.githubusercontent.com/88344031/149243403-8be2ab64-293e-4047-90ab-6a63b829ae22.png)
+# **Logging into an account on ieng6** #
+
+## Installing VScode ##
+
+blah
+
+---
+## Trying Some Commands ##
+
+blah
+
+---
+## Moving Files with `scp` ##
+
+blah
+
+---
+## Setting an SSH Key ##
+
+blah
+
+---
+## Optimizing Remote Running ##
+
+blah
