@@ -79,4 +79,12 @@ Additionally, you can run multiple commands by separating individual commands wi
 
 Other quality-of-life details: up-arrow or down-arrow to scroll through your history of commands and `tab` to autofill a command.
 
-![Image](MultipleCommands.png)
+This:
+
+![Image](MultipleCommands2.png)
+
+Compared to this:
+
+![Image](IndividualCommands.png)
+
+Although the first command is similar in keystrokes to the second command, if you were to need to quickly make changes you can press up-arrow or down-arrow to navigate your history and run the first command quickly, whereas the second command requires you to copy, log in, compile, and run which all take their own time to run.
