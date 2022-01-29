@@ -4,26 +4,26 @@
 
 Go to the VScode website [here](https://code.visualstudio.com/) and follow the instructions. There is a dropdown to show the different possible versions (macOS, Windows, Linux). Download the *Stable* build.
 
-![Image](VSCodeInstall.png)
+![Image](images/VSCodeInstall.png)
 
 Then boot up VSCode. It should look something like this:
 
-![Image](VSCodeOpened.png)
+![Image](images/VSCodeOpened.png)
 
 ---
 ## Remotely Connecting ##
 
 First, *if you are on Windows* set up [OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse)
 
-![Image](OpenSSHWindows.png)
+![Image](images/OpenSSHWindows.png)
 
 Then find your ieng6 account (CSE15L in this case) [here](https://sdacs.ucsd.edu/~icc/index.php).
 
-![Image](ieng6AccountLookup.png)
+![Image](images/ieng6AccountLookup.png)
 
 Next, we will connect remotely in VSCode. With VSCode open, open a new terminal either through the top left of VSCode or `ctrl` or `cmd` and `+`. Input the command `ssh cs15lwi22##@ieng6.ucsd.edu` in the terminal but with your ieng6 account id instead of the **##**. `ssh` means secure shell, which is what you will be using. You will receive some messages upon logging in for the first time. Type *yes* and type your password when prompted. Your terminal should look similar (**not exactly**) to this:
 
-![Image](SSHLogin.png)
+![Image](images/SSHLogin.png)
 
 ---
 ## Trying Some Commands ##
@@ -40,7 +40,7 @@ Some useful commands that you can try include:
 
 `cp <file>` copy
 
-![Image](TryingSomeCommands.png)
+![Image](images/TryingSomeCommands.png)
 
 To log out:
 
@@ -53,11 +53,11 @@ To log out:
 
 Compile and run the code. It may look something like this:
 
-![Image](RunningWhereAmI.png)
+![Image](images/RunningWhereAmI.png)
 
 Then run `scp <YOUR FILE> cs15lwi22##@ieng6.ucsd.edu:~/` with your own file, your own ieng6 account instead and type in your password when prompted. Log in to the ieng6 computer and run `ls` and you should see your file in the ieng6 computer. You can compile and run it and see your program run.
 
-![Image](CopyingWhereAmI.png)
+![Image](images/CopyingWhereAmI.png)
 
 ---
 ## Setting an SSH Key ##
@@ -68,7 +68,7 @@ First, you want to create a public key and private key by running `ssh-keygen`. 
 
 Next, you must copy the **public** key to the server, but you first need to create the directory to store the key on the server. Log in and run the command `mkdir .ssh` which *makes the directory named `.ssh`*. Log out then copy the key into the directory you just made by running `scp /YOUR DIRECTORY/.ssh/id_rsa.pub cs15lwi22##@ieng6.ucsd.edu:~/.ssh/authorized_keys`. You need to substitute your own key directory and your own ieng6 account in the command because you want to copy *your own* public key to *your own* account. You can now login without typing in your password (or with the password you set for the keys):
 
-![Image](LoggingInWithKey.png)
+![Image](images/LoggingInWithKey.png)
 
 ---
 ## Optimizing Remote Running ##
@@ -81,10 +81,10 @@ Other quality-of-life details: up-arrow or down-arrow to scroll through your his
 
 This:
 
-![Image](MultipleCommands2.png)
+![Image](images/MultipleCommands2.png)
 
 Compared to this:
 
-![Image](IndividualCommands.png)
+![Image](images/IndividualCommands.png)
 
 Although the first command is similar in keystrokes to the second command, if you were to need to quickly make changes you can press up-arrow or down-arrow to navigate your history and run the first command quickly, whereas the second command requires you to copy, log in, compile, and run which all take their own time to run.
