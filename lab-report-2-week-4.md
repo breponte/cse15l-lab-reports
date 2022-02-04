@@ -7,7 +7,7 @@ Code Change:
 ![Image](images/TextInBetween.png)
 
 
-The New Code Fixes: [Text in between links](https://github.com/breponte/markdown-parse/blob/main/fail-test.md)
+The New Code Fixes: [Text in between links](github.com/breponte/cse15l-lab-reports/blob/main/failtest/fail-test.md)
 
 
 Symptom:
@@ -24,7 +24,7 @@ Code Change:
 ![Image](images/LineAtEnd.png)
 
 
-The New Code Fixes: [Extra line at the end](https://github.com/breponte/markdown-parse/blob/main/fail-space.md)
+The New Code Fixes: [Extra line at the end](github.com/breponte/cse15l-lab-reports/blob/main/failtest/fail-space.md)
 
 
 Symptom:
@@ -41,7 +41,7 @@ Code Change:
 ![Image](images/IgnoreImages.png)
 
 
-The New Code Fixes: [Ignoring images](https://github.com/breponte/markdown-parse/blob/main/test.image.md)
+The New Code Fixes: [Ignoring images](github.com/breponte/cse15l-lab-reports/blob/main/failtest/test.image.md)
 
 
 Symptom:
