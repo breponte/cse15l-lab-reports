@@ -6,6 +6,7 @@
 
 [Reviewed Repository](https://github.com/yi113/markdown-parse)
 
+---
 ## Test Case #1
 
 ```
@@ -17,16 +18,19 @@
 
 [`code]`](ucsd.edu)
 ```
-***Expected Output***
+Expected Output : ```["`google.com","google.com", "ucsd.edu"]```
 
-***Show MarkdownParseTest.java Implementation***
+Test Case #1 Implementation : 
+![Snip1Test](images\Snip1Test.png)
 
-***YOUR Output of Test (explain failure is occurred)***
+My MarkdownParse Output : 
+![Snip1Fail](images\Snip1Fail.png)
 
-***OTHER'S Output of Test (explain failure is occurred)***
+Reviewed MarkdownParse Output : 
+![OtherSnip1Fail](images\OtherSnip1Fail.png)
 
 
-
+---
 ## Test Case #2
 ```
 [a [nested link](a.com)](b.com)
@@ -35,16 +39,19 @@
 
 [some escaped \[ brackets \]](example.com)
 ```
-***Expected Output***
+Expected Output : ```["a.com","a.com(())", "example.com"]```
 
-***Show MarkdownParseTest.java Implementation***
+Test Case #2 Implementation : 
+![Snip2Test](images\Snip2Test.png)
 
-***YOUR Output of Test (explain failure is occurred)***
+My MarkdownParse Output : 
+![Snip2Fail](images\Snip2Fail.png)
 
-***OTHER'S Output of Test (explain failure is occurred)***
+Reviewed MarkdownParse Output : 
+![OtherSnip2Fail](images\OtherSnip2Fail.png)
 
 
-
+---
 ## Test Case #3
 ```
 [this title text is really long and takes up more than 
@@ -72,13 +79,16 @@ And there's still some more text after that.
 
 And then there's more text
 ```
-***Expected Output***
+Expected Output : ```["https://ucsd-cse15l-w22.github.io/"]```
 
-***Show MarkdownParseTest.java Implementation***
+Test Case #3 Implementation : 
+![Snip3Test](images\Snip3Test.png)
 
-***YOUR Output of Test (explain failure is occurred)***
+My MarkdownParse Output : 
+![Snip3Fail](images\Snip3Fail.png)
 
-***OTHER'S Output of Test (explain failure is occurred)***
+Reviewed MarkdownParse Output : 
+![OtherSnip3Fail](images\OtherSnip3Fail.png)
 
 
 
