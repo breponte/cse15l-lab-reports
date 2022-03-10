@@ -1,10 +1,10 @@
-# Comparing Different `MarkdownParse.java` Functionality
+# Comparing Different MarkdownParse.java Functionality
 
 ## Finding Differences
 
-I stored the output of the provided `MarkdownParse.java` and my `MarkdownParse.java` output in separate files called `joe-results.txt` and `my-results.txt` respectively. Before that, I used the provided `script.sh` that ran every test in a folder using a bash for loop with the `MarkdownParse.java` in the same overall directory and modified it to print the file that the test case belonged to. With two text files storing the output of the same test cases, I used the bash `diff` command to output the different lines of output between the text files.
+I stored the output of the provided `MarkdownParse.java` and my `MarkdownParse.java` output in separate files called `joe-results.txt` and `my-results.txt` respectively using `bash script.sh > "Output File"`. Before that, I used the provided `script.sh` that ran every test in a folder using a bash for loop with the `MarkdownParse.java` in the same overall directory and modified it to print the file that the test case belonged to. With two text files storing the output of the same test cases, I used the bash `diff` command to output the different lines of output between the text files.
 
-## Test File `489.md`
+## Test File 489.md
 
 Test Case :
 
@@ -48,7 +48,7 @@ if(markdown.charAt(closeParen - 1) == '(') {
 } ...
 ```
 
-## Test File `577.md`
+## Test File 577.md
 
 Test Case :
 
